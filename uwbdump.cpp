@@ -179,9 +179,10 @@ int main(int argc, char *argv[])
                << "," << it->ut_id
                << "," << it->ut_user
                << "," << it->ut_host
-               << "," << it->ut_exit.e_termination << ","
-               << it->ut_session << "," << it->ut_tv.tv_sec << ","
-               << intToIpV4(it->ut_addr_v6[0]) << std::endl;
+               << "," << it->ut_exit.e_termination 
+               << "," << it->ut_session 
+               << "," << it->ut_tv.tv_sec 
+               << "," << intToIpV4(it->ut_addr_v6[0]) << std::endl;
         }
 
         of.close();
